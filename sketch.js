@@ -110,6 +110,7 @@ function draw() {
     
     //set lifetime of the game objects so that they are never destroyed
     obstaclesGroup.setLifetimeEach(-1);
+    
     cloudsGroup.setLifetimeEach(-1);
     
     if(mousePressedOver(restart)) {
@@ -135,6 +136,7 @@ function spawnClouds() {
     
     //adjust the depth
     cloud.depth = trex.depth;
+    
     trex.depth = trex.depth + 1;
     
     //add each cloud to the group
@@ -151,6 +153,7 @@ function spawnObstacles() {
     
     //generate random obstacles
     var rand = Math.round(random(1,6));
+    
     switch(rand) {
       case 1: obstacle.addImage(obstacle1);
               break;
