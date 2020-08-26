@@ -14,6 +14,8 @@ var gameOver, restart;
 
 localStorage["HighestScore"] = 0;
 
+
+
 function preload(){
   trex_running =   loadAnimation("trex1.png","trex3.png","trex4.png");
   trex_collided = loadAnimation("trex_collided.png");
@@ -70,7 +72,7 @@ function setup() {
 
 function draw() {
   //trex.debug = true;
-  background("orange");
+  background("blue");
   text("Score: "+ score, 500,50);
   
   if (gameState===PLAY){
